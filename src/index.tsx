@@ -10,7 +10,7 @@ import './css/index.css';
 /* MATERIAL UI */
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
+import theme from './app/MaterialTheme';
 
 
 const container = document.getElementById('root')!;
