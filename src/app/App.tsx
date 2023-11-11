@@ -15,6 +15,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { RestaurantPage } from './screens/RestaurantPage';
+import { CommunityPage } from './screens/CommunityPage';
+import { OrdersPage } from './screens/OrdersPage';
+import { MemberPage } from './screens/MemberPage';
+import { HelpPage } from './screens/HelpPage';
+import { LoginPage } from './screens/LoginPage';
+import { HomePage } from './screens/HomePage';
 
 
 function App() {
@@ -23,35 +30,38 @@ function App() {
     <div>
       <nav>
         <ul>
-          <li>
-            <Container>
-            <Link to="/">Home</Link>
-            </Container>
-          </li>
-          <li>
-           <Container>
-           <Link to="/dishes">Dishes</Link>
-           </Container>
-          </li>
-          <li>
-           <Container>
-           <Link to="/users">Users</Link>
-           </Container>
-          </li>
+          <li> <Link to="/restaurant">RestaurantPage</Link></li>
+          <li> <Link to="/comunity">ComunityPage</Link></li>
+          <li> <Link to="/orders">OrdersPage</Link></li>
+          <li> <Link to="/member-page">MemberPage</Link></li>
+          <li> <Link to="/help">HelpPage</Link></li>
+          <li> <Link to="/login">LoginPage</Link></li>
+          <li> <Link to="/">Home</Link></li>
+
         </ul>
       </nav>
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/dishes">
-          <Dishes />
+        <Route path="/restaurant">
+          <RestaurantPage />
         </Route>
-        <Route path="/users">
-          <Users />
+        <Route path="/comunity">
+          <CommunityPage />
+        </Route>
+        <Route path="/orders">
+          <OrdersPage />
+        </Route>
+        <Route path="/member-page">
+          <MemberPage />
+        </Route>
+        <Route path="/help">
+          <HelpPage />
+        </Route>
+        <Route path="/login">
+          <LoginPage />
         </Route>
         <Route path="/">
-          <Home />
+          <HomePage />
         </Route>
       </Switch>
     </div>
