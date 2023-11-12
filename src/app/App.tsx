@@ -5,6 +5,7 @@ import React from 'react'
 import react, { useState } from 'react';
 import '../css/App.css';
 import '../css/navbar.css';
+import '../css/footer.css';
 import { Box, Stack, Button} from '@mui/material';
 import { RippleBadge } from './MaterialTheme/styled';
 
@@ -26,6 +27,7 @@ import { HomePage } from './screens/HomePage';
 import { NavbarHome } from './components/header/index';
 import { NavbarRestaurants } from './components/header/restaurants';
 import { NavbarOthers } from './components/header/others';
+import { Footer } from './components/footer';
 
 
 
@@ -39,20 +41,6 @@ function App() {
 
       {main_path == '/' ? (<NavbarHome setPath={setPath} />) : main_path.includes('/restaurant') ? (<NavbarRestaurants setPath={setPath} />) : (<NavbarOthers setPath={setPath} />)
       }
-
-
-      {/* <nav>
-        <ul>
-          <li> <Link to="/restaurant">RestaurantPage</Link></li>
-          <li> <Link to="/comunity">ComunityPage</Link></li>
-          <li> <Link to="/orders">OrdersPage</Link></li>
-          <li> <Link to="/member-page">MemberPage</Link></li>
-          <li> <Link to="/help">HelpPage</Link></li>
-          <li> <Link to="/login">LoginPage</Link></li>
-          <li> <Link to="/">Home</Link></li>
-
-        </ul>
-      </nav> */}
 
         <Switch>
         <Route path="/restaurant">
@@ -77,6 +65,8 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
+
+      <Footer></Footer>
   </Router>
   );
 }
