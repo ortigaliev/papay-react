@@ -4,7 +4,25 @@
   width: 100%;
   height: 772px;
   display: flex;
+  background: url(/public/homeImg/restaurantImg.png);
+  background-size: cover;
+}
+
+/* NAVBAR RESTAURANT */
+.format_restaurant {
+  width: 100%;
+  height: 400px;
+  display: flex;
   background: url(/public/homeImg/headerImg.png);
+  background-size: cover;
+}
+
+/* OTHERS HEADER */
+ .format__others {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background: url(/public/others/other.png);
   background-size: cover;
 }
 

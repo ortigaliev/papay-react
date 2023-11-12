@@ -37,7 +37,7 @@ function App() {
   return (
     <Router>
 
-      {main_path == '/' ? (<NavbarHome setPath={setPath} />) : main_path.includes('/restaurants') ? (<NavbarRestaurants setPath={setPath} />) : (<NavbarOthers setPath={setPath} />)
+      {main_path == '/' ? (<NavbarHome setPath={setPath} />) : main_path.includes('/restaurant') ? (<NavbarRestaurants setPath={setPath} />) : (<NavbarOthers setPath={setPath} />)
       }
 
 
