@@ -1,12 +1,13 @@
 
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import React from 'react';
+import React from 'react'
 import '../css/App.css';
+import '../css/navbar.css';
+import './css/index.css';
 import { Box, Stack, Button} from '@mui/material';
 import { RippleBadge } from './MaterialTheme/styled';
-import Dishes from '../app/components/dishes';
-import Users from '../app/components/users';
+
 
 /* REACT ROUTER DOM */
 import {
@@ -22,13 +23,25 @@ import { MemberPage } from './screens/MemberPage';
 import { HelpPage } from './screens/HelpPage';
 import { LoginPage } from './screens/LoginPage';
 import { HomePage } from './screens/HomePage';
+import { NavbarHome } from './components/header/index';
+import { NavbarRestaurants } from './components/header/restaurants';
+import { NavbarOthers } from './components/header/others';
+
 
 
 function App() {
+  const [path, setPath] = useState();
+  const main_path = window.location.pathname;
+
+
   return (
     <Router>
-    <div>
-      <nav>
+
+      {main_path == '/' ? (<NavbarHome setPath={setPath} />) : main_path.includes('/restaurants') ? (<NavbarRestaurants setPath={setPath} />) : (<NavbarOthers setPath={setPath} />)
+      }
+
+
+      {/* <nav>
         <ul>
           <li> <Link to="/restaurant">RestaurantPage</Link></li>
           <li> <Link to="/comunity">ComunityPage</Link></li>
@@ -39,13 +52,13 @@ function App() {
           <li> <Link to="/">Home</Link></li>
 
         </ul>
-      </nav>
+      </nav> */}
 
-      <Switch>
+        <Switch>
         <Route path="/restaurant">
           <RestaurantPage />
         </Route>
-        <Route path="/comunity">
+        <Route path="/community">
           <CommunityPage />
         </Route>
         <Route path="/orders">
@@ -64,7 +77,6 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
-    </div>
   </Router>
   );
 }
