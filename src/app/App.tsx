@@ -2,9 +2,9 @@
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import React from 'react'
+import react, { useState } from 'react';
 import '../css/App.css';
 import '../css/navbar.css';
-import './css/index.css';
 import { Box, Stack, Button} from '@mui/material';
 import { RippleBadge } from './MaterialTheme/styled';
 
@@ -82,7 +82,3 @@ function App() {
 }
 
 export default App;
-
-function Home() {
-  return <h2>Home</h2>;
-}

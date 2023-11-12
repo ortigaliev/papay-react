@@ -12,19 +12,19 @@ export function NavbarHome (props: any) {
   </Box>
 
   <Stack className='navbar_links' flexDirection={'row'} justifyContent='space-evenly' alignItems={'center'}>
-  <Box className='hover_line'>
+  <Box className='hover_line' onClick={props.setPath}>
   <NavLink to="/" activeClassName='underline'>Bosh Sahifa</NavLink>
   </Box>
-  <Box className='hover_line'>
+  <Box className='hover_line' onClick={props.setPath}>
   <NavLink to="/restaurant" activeClassName='underline'>Oshxona</NavLink>
   </Box>
-  <Box className='hover_line'>
+  <Box className='hover_line' onClick={props.setPath}>
   <NavLink to="/orders" activeClassName='underline'>Buyurtma</NavLink>
   </Box>
-  <Box className='hover_line'>
+  <Box className='hover_line' onClick={props.setPath}>
   <NavLink to="/community" activeClassName='underline'>Jamiyat</NavLink>
   </Box>
-  <Box className='hover_line'>
+  <Box className='hover_line' onClick={props.setPath}>
   <NavLink to="/help" activeClassName='underline'>Yordam</NavLink>
   </Box>
 
