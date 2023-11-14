@@ -21,12 +21,12 @@ export function Footer () {
             </Stack>
           </Stack>
           <Stack className='parts'>
-            <Box className='parts_subject'>Bo'limlar</Box>
+            <Box className='parts_subject'>Sections</Box>
             <Box className='divider'></Box>
             <Box className='targets'>Bosh Sahifa Oshxonalar Jamiyat <br/>Yordam</Box>
           </Stack>
           <Stack className='find_us'>
-            <Box className='find'>Bizni Top</Box>
+            <Box className='find'>Find us</Box>
             <Box className='divider'></Box>
             <Stack className='details' sx={{mt: '19px'}}>
               <Box className='detail_first'>L.</Box>
