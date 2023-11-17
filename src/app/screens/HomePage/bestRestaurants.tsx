@@ -1,6 +1,6 @@
 import { Favorite } from "@mui/icons-material";
-import { AspectRatio,Card, CardOverflow, CssVarsProvider,  Typography, Link, IconButton, Button } from "@mui/joy";
-import { Box, Container, Stack } from "@mui/material";
+import { AspectRatio,Card, CardOverflow, CssVarsProvider,  Typography, Link, IconButton, } from "@mui/joy";
+import { Box, Container, Stack, Button } from "@mui/material";
 import React from "react";
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import CallIcon from '@mui/icons-material/Call';
@@ -10,7 +10,7 @@ export function BestRestaurants () {
   return (
     <div className="best_restaurant_frame">
       <img src="icons/best_restaurant-icon.svg" alt="best" style={{ position: "absolute", left: "6%", }} />
-      <Container sx={ {mt: "130px"}}>
+      <Container sx={ {paddingTop: "133px"}}>
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Box className="category_title">Best Restaurants</Box>
           <Stack sx={{mt: "43px"}} flexDirection={"row"} >
