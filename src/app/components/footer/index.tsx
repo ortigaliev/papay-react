@@ -23,7 +23,7 @@ export function Footer () {
           <Stack className='parts'>
             <Box className='parts_subject'>Sections</Box>
             <Box className='divider'></Box>
-            <Box className='targets'>Bosh Sahifa Oshxonalar Jamiyat <br/>Yordam</Box>
+            <Box className='targets'>Main Page Restaurants Community <br/>Help</Box>
           </Stack>
           <Stack className='find_us'>
             <Box className='find'>Find us</Box>

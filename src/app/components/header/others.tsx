@@ -17,16 +17,16 @@ export function NavbarOthers (props: any) {
   <NavLink to="/">Bosh Sahifa</NavLink>
   </Box>
   <Box className='hover_line' onClick={props.setPath}>
-  <NavLink to="/restaurant" activeClassName='underline'>Oshxona</NavLink>
+  <NavLink to="/restaurant" activeClassName='underline'>Restaurant</NavLink>
   </Box>
   <Box className='hover_line' onClick={props.setPath}>
-  <NavLink to="/orders" activeClassName='underline'>Buyurtma</NavLink>
+  <NavLink to="/orders" activeClassName='underline'>Order</NavLink>
   </Box>
   <Box className='hover_line' onClick={props.setPath}>
-  <NavLink to="/community" activeClassName='underline'>Jamiyat</NavLink>
+  <NavLink to="/community" activeClassName='underline'>Community</NavLink>
   </Box>
   <Box className='hover_line' onClick={props.setPath}>
-  <NavLink to="/help" activeClassName='underline'>Yordam</NavLink>
+  <NavLink to="/help" activeClassName='underline'>Help</NavLink>
   </Box>
 
   {/* SHOPPING CART */}
@@ -39,7 +39,7 @@ export function NavbarOthers (props: any) {
     </Box>
   </Box>
   <Box>
-  <Button className='hover-line' variant='contained' style={{width: '77pxpx', height: '36px', background: '#1976d2', color: '#fff'}}>KIRISH</Button>
+  <Button className='hover-line' variant='contained' style={{width: '77pxpx', height: '36px', background: '#1976d2', color: '#fff'}}>Sign in</Button>
   </Box>
   </Stack>
   </Stack>
