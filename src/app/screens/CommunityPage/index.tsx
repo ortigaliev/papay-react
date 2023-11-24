@@ -4,5 +4,5 @@ import React from 'react';
 export function CommunityPage () {
   return (
     <Container>Community Page</Container>
-    )
-};
+    );
+}
