@@ -1,18 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import SearchIcon from "@mui/icons-material/Search";
-import { Box, Button, Container, Stack } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { Favorite, FavoriteBorder, MonetizationOn } from "@mui/icons-material";
-import Badge from "@mui/material/Badge";
-import Checkbox from "@mui/material/Checkbox";
-import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import StarIcon from "@mui/icons-material/Star";
-=======
 import { Box, Button, Container, Stack } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -25,7 +11,6 @@ import Favorite from "@mui/icons-material/Favorite";
 import MonetizationOn from "@mui/icons-material/MonetizationOn";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import Badge from "@mui/material/Badge";
->>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
 
 const restaurant_list = Array.from(Array(10).keys());
 const product_list = Array.from(Array(8).keys());
@@ -35,10 +20,6 @@ export function OneRestaurant() {
     <div className="single_restaurant">
       <Container>
         <Stack flexDirection={"column"} alignItems={"center"}>
-<<<<<<< HEAD
-=======
-
->>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
           <Stack className={"avatar_big_box"}>
             <Box className={"top_text"}>
               <p>Uzum</p>
@@ -209,10 +190,6 @@ export function OneRestaurant() {
               })}
             </Stack>
           </Stack>
-<<<<<<< HEAD
-=======
-
->>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
         </Stack>
       </Container>
 
