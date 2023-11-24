@@ -5,6 +5,11 @@
   background: #0b0e11;
 }
 
+<<<<<<< HEAD
+=======
+/* ALL RESTAURANTS */
+
+>>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
 .restaurant_page .all_restaurant .fil_search_box {
   position: relative;
   width: 100%;
@@ -216,7 +221,10 @@
 .restaurant_page .single_restaurant {
   width: 100%;
   height: auto;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
   display: flex;
   flex-direction: column;
   background: #0b0e11;

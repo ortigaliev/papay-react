@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import Swiper, { FreeMode, Navigation, Thumbs } from "swiper";
 import { Container, Stack } from "@mui/material";
@@ -34,3 +35,12 @@ export function ChosenDish() {
 
     )
   };
+=======
+import React from "react";
+
+export function ChosenDish () {
+  return (
+    <div>chosenDish</div>
+  )
+};
+>>>>>>> d454ae3a29748af6cc08f35add28af0422d599e1
