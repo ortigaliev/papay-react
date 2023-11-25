@@ -867,14 +867,14 @@
   margin: 0;
   padding: 0;
 }
-.chosen_dish_page .mySwiper{
+/* .chosen_dish_page .mySwiper{
   --swiper-navigation-color: #fff;
   --swiper-pagination-color: #fff;
   width: 160px;
   height: 107px;
   margin: 0;
   padding: 0;
-}
+} */
 .chosen_dish_page .chosen_dish_info_container {
   padding: 30px 40px;
   width: 49%;
